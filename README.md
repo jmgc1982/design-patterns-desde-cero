@@ -38,7 +38,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 ---
 
-## 📖 PARTE I — FUNDAMENTOS
+## 📖 PARTE I - FUNDAMENTOS
 
 | # | Capítulo |
 |---:|---|
@@ -49,9 +49,9 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 ---
 
-## 🏗️ PARTE II — PATRONES CREACIONALES
+## 🏗️ PARTE II - PATRONES CREACIONALES
 
-| # | Patrón |
+| # | Capítulo/Patrón |
 |---:|---|
 | 5 | Singleton |
 | 6 | Factory Method |
@@ -61,9 +61,9 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 ---
 
-## 🧱 PARTE III — PATRONES ESTRUCTURALES
+## 🧱 PARTE III - PATRONES ESTRUCTURALES
 
-| # | Patrón |
+| # | Capítulo/Patrón |
 |---:|---|
 | 10 | Adapter |
 | 11 | Bridge |
@@ -75,9 +75,9 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 ---
 
-## 🔄 PARTE IV — PATRONES DE COMPORTAMIENTO
+## 🔄 PARTE IV - PATRONES DE COMPORTAMIENTO
 
-| # | Patrón |
+| # | Capítulo/Patrón |
 |---:|---|
 | 17 | Strategy |
 | 18 | Observer |
@@ -93,7 +93,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 ---
 
-## 🎯 PARTE V — APLICACIÓN PRÁCTICA Y CIERRE
+## 🎯 PARTE V - APLICACIÓN PRÁCTICA Y CIERRE
 
 | # | Capítulo |
 |---:|---|
@@ -254,18 +254,6 @@ Consiste en aprender a observar nuestro software, identificar problemas y pregun
 
 ---
 
-# 📱 Serie en LinkedIn
-
-La serie se publica en LinkedIn siguiendo una metodología de dos publicaciones semanales:
-
-**Martes → entender 🧠**
-
-**Jueves → aplicar 💻**
-
-Acompaña el recorrido completo desde los fundamentos hasta el proyecto final.
-
----
-
 # ⭐ Si este proyecto te resulta útil
 
 Si estás aprendiendo sobre diseño de software, eres desarrollador, estudiante o simplemente quieres mejorar la calidad de tus aplicaciones:
@@ -281,9 +269,3 @@ Si estás aprendiendo sobre diseño de software, eres desarrollador, estudiante 
 Y, sobre todo...
 
 > **Aprendamos a diseñar software mejor.**
-
----
-
-## 📚 Patrones de Diseño desde Cero
-
-**Aprende a diseñar software mantenible con ejemplos reales.**
