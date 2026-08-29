@@ -328,6 +328,30 @@ Patrones relacionados con la comunicación y distribución de responsabilidades 
 
 ---
 
+# 🎨 Infografías
+
+Cada capítulo contará con una infografía siguiendo una **plantilla visual común**.
+
+Las infografías mantendrán:
+
+- Cabecera de la serie.
+- Identificación de la Parte.
+- Identificación del capítulo.
+- Bloques modulares.
+- Código Java cuando sea relevante.
+- UML cuando sea relevante.
+- Resumen visual.
+- Próxima publicación.
+- Metodología de publicación.
+
+### 🧠 Martes → ENTENDER
+
+### 💻 Jueves → APLICAR
+
+La plantilla visual se mantendrá constante durante toda la serie para conseguir una identidad gráfica reconocible.
+
+---
+
 # ✍️ Contenido original
 
 Esta serie utiliza diferentes fuentes de referencia para estudiar conceptos, contrastar información y profundizar en los patrones de diseño.
@@ -368,11 +392,26 @@ Estos contenidos permanecen bajo los derechos de autor de su creador, salvo que 
 
 ---
 
+# 📌 Principio fundamental
+
+> **Los patrones de diseño no son el punto de partida.**
+>
+> **Los problemas de diseño son el punto de partida.**
+
+Aprender patrones no consiste únicamente en saber qué es Singleton, Factory o Strategy.
+
+Consiste en aprender a observar nuestro software, identificar problemas y preguntarnos:
+
+> **¿Cómo podría diseñar esto mejor?**
+
+---
+
 # 📱 Serie en LinkedIn
 
 La serie se publica en LinkedIn siguiendo una metodología de dos publicaciones semanales:
 
 **Martes → entender 🧠**
+
 **Jueves → aplicar 💻**
 
 Acompaña el recorrido completo desde los fundamentos hasta el proyecto final.
@@ -384,8 +423,11 @@ Acompaña el recorrido completo desde los fundamentos hasta el proyecto final.
 Si estás aprendiendo sobre diseño de software, eres desarrollador, estudiante o simplemente quieres mejorar la calidad de tus aplicaciones:
 
 ⭐ Dale una estrella al repositorio.
+
 🍴 Haz un fork.
+
 💬 Comparte tus ideas y propuestas.
+
 🐛 Abre un issue si encuentras algún problema.
 
 Y, sobre todo...
