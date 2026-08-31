@@ -20,7 +20,7 @@ Los patrones de diseño suelen presentarse como una lista de nombres que debemos
 - Adapter
 - Strategy
 - Observer
-- ...
+- etc.
 
 Pero conocer sus nombres no significa saber cuándo utilizarlos.
 
