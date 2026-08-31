@@ -1,0 +1,26 @@
+@startuml
+
+interface Notificador {
+    + enviar(mensaje : String) : void
+}
+
+class EmailNotificador {
+    + enviar(mensaje : String) : void
+}
+
+class SMSNotificador {
+    + enviar(mensaje : String) : void
+}
+
+class ServicioNotificaciones {
+    - notificador : Notificador
+    + ServicioNotificaciones(notificador : Notificador)
+    + enviar(mensaje : String) : void
+}
+
+Notificador <|.. EmailNotificador
+Notificador <|.. SMSNotificador
+
+ServicioNotificaciones --> Notificador
+
+@enduml

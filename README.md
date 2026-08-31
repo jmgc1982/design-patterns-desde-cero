@@ -232,7 +232,6 @@ La licencia Apache 2.0 **no se aplica automáticamente** a:
 - 🎨 Infografías.
 - 🖼️ Recursos gráficos.
 - 📚 Contenido editorial.
-- 📖 Material destinado a futuro eBook/libro.
 
 Estos contenidos permanecen bajo los derechos de autor de su creador, salvo que se indique expresamente lo contrario.
 
@@ -251,6 +250,14 @@ Aprender patrones no consiste únicamente en saber qué es Singleton, Factory o 
 Consiste en aprender a observar nuestro software, identificar problemas y preguntarnos:
 
 > **¿Cómo podría diseñar esto mejor?**
+
+---
+
+# 🖼️ Infografía
+
+Aquí os dejo una infografía sobre la estructura de la serie.
+
+![Infografía](./infografia/Inicio.png)
 
 ---
 
