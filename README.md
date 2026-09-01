@@ -42,7 +42,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 | # | Capítulo |
 |---:|---|
-| 1 | ¿Qué son los patrones de diseño? ⭐️ |
+| 1 | [¿Qué son los patrones de diseño?](parte-01-fundamentos/capitulo-01-que-son-los-patrones-de-diseno/README.md#-cap%C3%ADtulo-1---qu%C3%A9-son-los-patrones-de-dise%C3%B1o)|
 | 2 | ¿Por qué aparecen? |
 | 3 | Principios antes que patrones |
 | 4 | Antipatrones y errores comunes |
