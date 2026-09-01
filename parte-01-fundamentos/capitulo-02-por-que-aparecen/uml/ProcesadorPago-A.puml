@@ -1,0 +1,7 @@
+@startuml
+
+class ProcesadorPago {
+    + pagar(cantidad : double) : void
+}
+
+@enduml

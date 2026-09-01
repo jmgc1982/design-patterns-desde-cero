@@ -1,0 +1,19 @@
+@startuml
+
+class ProcesadorPago {
+    + pagar(metodo : String, cantidad : double) : void
+    - pagarConTarjeta(cantidad : double) : void
+    - pagarConPayPal(cantidad : double) : void
+    - pagarConBizum(cantidad : double) : void
+    - pagarConApplePay(cantidad : double) : void
+    - pagarConGooglePay(cantidad : double) : void
+    - pagarConTransferencia(cantidad : double) : void
+}
+
+note right of ProcesadorPago
+    Cada nuevo método de pago
+    aumenta las responsabilidades
+    de esta clase.
+end note
+
+@enduml
