@@ -537,7 +537,7 @@ Es que seamos capaces de mirar un problema de diseño y preguntarnos:
 
 Aquí os dejo una infografía sobre este **capítulo 1**.
 
-![Infografía](/design-patterns-desde-cero/parte-01-fundamentos/capitulo-01-que-son-los-patrones-de-diseno/infografia/P1-C1.PNG)
+![Infografía](infografia/P1-C1.PNG)
 
 ---
 
