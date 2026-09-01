@@ -257,7 +257,7 @@ Consiste en aprender a observar nuestro software, identificar problemas y pregun
 
 Aquí os dejo una infografía sobre la estructura de la serie.
 
-![Infografía](infografia/Inicio.png)
+![Infografía](infografia/Intro.PNG)
 
 ---
 
