@@ -1,0 +1,31 @@
+@startuml
+
+class Pedido {
+    - total : double
+    + Pedido(total : double)
+    + getTotal() : double
+}
+
+interface PedidoRepository {
+    + guardar(pedido : Pedido) : void
+}
+
+class MySQLPedidoRepository {
+    + guardar(pedido : Pedido) : void
+}
+
+interface Notificador {
+    + enviar(mensaje : String) : void
+}
+
+class EmailNotificador {
+    + enviar(mensaje : String) : void
+}
+
+PedidoRepository <|.. MySQLPedidoRepository
+Notificador <|.. EmailNotificador
+
+MySQLPedidoRepository --> Pedido
+EmailNotificador --> Pedido
+
+@enduml
