@@ -1,0 +1,26 @@
+@startuml
+
+class PedidoService {
+    + crearPedido()
+    + calcularPrecio()
+    + aplicarDescuento()
+    + guardarEnMySQL()
+    + enviarEmail()
+    + actualizarStock()
+    + generarFacturaPDF()
+    + registrarAuditoria()
+}
+
+class MySQL
+class EmailService
+class Inventario
+class GeneradorPDF
+class Auditoria
+
+PedidoService --> MySQL
+PedidoService --> EmailService
+PedidoService --> Inventario
+PedidoService --> GeneradorPDF
+PedidoService --> Auditoria
+
+@enduml
