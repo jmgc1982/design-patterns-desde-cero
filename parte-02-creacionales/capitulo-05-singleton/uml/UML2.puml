@@ -1,0 +1,22 @@
+@startuml
+
+class Configuracion {
+    - INSTANCIA : Configuracion
+    - entorno : String
+    - urlApi : String
+    - Configuracion()
+    + getInstance() : Configuracion
+    + getEntorno() : String
+    + getUrlApi() : String
+}
+
+class Cliente
+
+Cliente --> Configuracion : getInstance()
+
+note right of Configuracion
+  Una única instancia
+  compartida por los clientes.
+end note
+
+@enduml
