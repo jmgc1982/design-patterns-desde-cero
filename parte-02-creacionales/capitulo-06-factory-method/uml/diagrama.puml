@@ -1,0 +1,38 @@
+@startuml
+
+interface Notificacion {
+    + enviar(mensaje : String) : void
+}
+
+class EmailNotificacion {
+    + enviar(mensaje : String) : void
+}
+
+class SMSNotificacion {
+    + enviar(mensaje : String) : void
+}
+
+abstract class NotificacionCreator {
+    + crearNotificacion() : Notificacion
+    + notificar(mensaje : String) : void
+}
+
+class EmailNotificacionCreator {
+    + crearNotificacion() : Notificacion
+}
+
+class SMSNotificacionCreator {
+    + crearNotificacion() : Notificacion
+}
+
+Notificacion <|.. EmailNotificacion
+Notificacion <|.. SMSNotificacion
+
+NotificacionCreator <|-- EmailNotificacionCreator
+NotificacionCreator <|-- SMSNotificacionCreator
+
+NotificacionCreator ..> Notificacion : crea/utiliza
+EmailNotificacionCreator ..> EmailNotificacion : crea
+SMSNotificacionCreator ..> SMSNotificacion : crea
+
+@enduml
