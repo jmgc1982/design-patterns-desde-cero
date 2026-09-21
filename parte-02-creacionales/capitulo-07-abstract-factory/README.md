@@ -5,7 +5,7 @@
 # 📖 Capítulo 7 - Abstract Factory
 
 > **📚 Patrones de Diseño desde Cero**  
-> **🏗️ Parte II — Patrones Creacionales**
+> **🏗️ Parte II - Patrones Creacionales**
 
 ---
 
@@ -1438,7 +1438,7 @@ Lo utilizamos cuando existe una necesidad real de **crear familias coherentes de
 
 # 🖼️ Infografía
 
-Aquí os dejo una infografía sobre este **capítulo 6**.
+Aquí os dejo una infografía sobre este **capítulo 7**.
 
 ![Infografía](infografia/P2-C7.PNG)
 
