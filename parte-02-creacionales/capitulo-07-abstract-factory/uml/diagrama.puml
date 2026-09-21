@@ -1,0 +1,57 @@
+@startuml
+
+interface Boton {
+    + renderizar() : void
+}
+
+interface Checkbox {
+    + renderizar() : void
+}
+
+class BotonWindows {
+    + renderizar() : void
+}
+
+class CheckboxWindows {
+    + renderizar() : void
+}
+
+class BotonMac {
+    + renderizar() : void
+}
+
+class CheckboxMac {
+    + renderizar() : void
+}
+
+interface GUIFactory {
+    + crearBoton() : Boton
+    + crearCheckbox() : Checkbox
+}
+
+class WindowsFactory {
+    + crearBoton() : Boton
+    + crearCheckbox() : Checkbox
+}
+
+class MacFactory {
+    + crearBoton() : Boton
+    + crearCheckbox() : Checkbox
+}
+
+Boton <|.. BotonWindows
+Boton <|.. BotonMac
+
+Checkbox <|.. CheckboxWindows
+Checkbox <|.. CheckboxMac
+
+GUIFactory <|.. WindowsFactory
+GUIFactory <|.. MacFactory
+
+WindowsFactory ..> BotonWindows : crea
+WindowsFactory ..> CheckboxWindows : crea
+
+MacFactory ..> BotonMac : crea
+MacFactory ..> CheckboxMac : crea
+
+@enduml

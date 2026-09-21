@@ -55,7 +55,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 |---:|---|
 | 5 | [Singleton](parte-02-creacionales/capitulo-05-singleton/README.md#-capítulo-5---singleton) |
 | 6 | [Factory Method](parte-02-creacionales/capitulo-06-factory-method/README.md#-capítulo-6---factory-method) |
-| 7 | Abstract Factory |
+| 7 | [Abstract Factory](parte-02-creacionales/capitulo-07-abstract-factory/README.md#-capítulo-7---abstract-factory) |
 | 8 | Builder |
 | 9 | Prototype |
 
