@@ -1,0 +1,33 @@
+@startuml
+
+interface "Prototype<T>" as Prototype {
+    + clonar() : T
+}
+
+class Documento {
+    - titulo : String
+    - contenido : String
+    - autor : String
+    - idioma : String
+    - formato : String
+    - configuracion : ConfiguracionPagina
+
+    + clonar() : Documento
+}
+
+class ConfiguracionPagina {
+    - tamano : String
+    - orientacion : String
+    - margen : int
+
+    + clonar() : ConfiguracionPagina
+}
+
+Prototype <|.. Documento
+Prototype <|.. ConfiguracionPagina
+
+Documento *-- ConfiguracionPagina
+
+Documento ..> Documento : clona
+
+@enduml
