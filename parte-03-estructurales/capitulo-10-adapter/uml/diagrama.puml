@@ -1,0 +1,26 @@
+@startuml
+
+interface ReproductorAudio {
+    + reproducir(archivo : String) : void
+}
+
+class ReproductorMP3 {
+    + reproducir(archivo : String) : void
+}
+
+class VLCPlayer {
+    + playVlcFile(filename : String) : void
+}
+
+class VLCAdapter {
+    - vlcPlayer : VLCPlayer
+    + VLCAdapter(vlcPlayer : VLCPlayer)
+    + reproducir(archivo : String) : void
+}
+
+ReproductorAudio <|.. ReproductorMP3
+ReproductorAudio <|.. VLCAdapter
+
+VLCAdapter --> VLCPlayer : adapta
+
+@enduml
