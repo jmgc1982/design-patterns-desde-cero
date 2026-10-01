@@ -1,0 +1,51 @@
+@startuml
+
+interface Dispositivo {
+    + estaEncendido() : boolean
+    + encender() : void
+    + apagar() : void
+    + getVolumen() : int
+    + setVolumen(volumen : int) : void
+}
+
+class Televisor {
+    - encendido : boolean
+    - volumen : int
+    + estaEncendido() : boolean
+    + encender() : void
+    + apagar() : void
+    + getVolumen() : int
+    + setVolumen(volumen : int) : void
+}
+
+class Radio {
+    - encendida : boolean
+    - volumen : int
+    + estaEncendido() : boolean
+    + encender() : void
+    + apagar() : void
+    + getVolumen() : int
+    + setVolumen(volumen : int) : void
+}
+
+class Mando {
+    # dispositivo : Dispositivo
+    + Mando(dispositivo : Dispositivo)
+    + alternarEncendido() : void
+    + subirVolumen() : void
+    + bajarVolumen() : void
+}
+
+class MandoAvanzado {
+    + MandoAvanzado(dispositivo : Dispositivo)
+    + silenciar() : void
+}
+
+Dispositivo <|.. Televisor
+Dispositivo <|.. Radio
+
+Mando <|-- MandoAvanzado
+
+Mando --> Dispositivo : utiliza
+
+@enduml
