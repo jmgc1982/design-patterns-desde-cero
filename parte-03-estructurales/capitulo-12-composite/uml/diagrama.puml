@@ -1,0 +1,34 @@
+@startuml
+
+interface ElementoSistema {
+    + getNombre() : String
+    + obtenerTamano() : long
+    + mostrar(prefijo : String) : void
+}
+
+class Archivo {
+    - nombre : String
+    - tamano : long
+
+    + getNombre() : String
+    + obtenerTamano() : long
+    + mostrar(prefijo : String) : void
+}
+
+class Carpeta {
+    - nombre : String
+    - elementos : List<ElementoSistema>
+
+    + agregar(elemento : ElementoSistema) : void
+    + eliminar(elemento : ElementoSistema) : void
+    + getNombre() : String
+    + obtenerTamano() : long
+    + mostrar(prefijo : String) : void
+}
+
+ElementoSistema <|.. Archivo
+ElementoSistema <|.. Carpeta
+
+Carpeta o-- "0..*" ElementoSistema : contiene
+
+@enduml
