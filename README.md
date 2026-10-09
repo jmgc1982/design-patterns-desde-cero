@@ -104,42 +104,6 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 ---
 
-# 📅 Publicaciones en LinkedIn
-
-La serie se publica siguiendo una metodología de **dos publicaciones semanales**.
-
-### 🧠 Martes → ENTENDER
-
-La publicación del martes está orientada principalmente a comprender:
-
-- Conceptos.
-- Problemas.
-- Motivación.
-- Explicaciones.
-- Ejemplos sencillos.
-- Ventajas y desventajas.
-- Casos de uso.
-- Infografía.
-
-### 💻 Jueves → APLICAR
-
-La publicación del jueves está orientada principalmente a aplicar lo aprendido:
-
-- Caso de uso real.
-- UML.
-- Implementación en Java.
-- Explicación paso a paso.
-- Buenas prácticas.
-- Errores frecuentes.
-- Comparación con soluciones similares.
-- Código disponible en este repositorio.
-
-> **Martes → entender 🧠**
->
-> **Jueves → aplicar 💻**
-
----
-
 # ☕ Tecnología
 
 Los ejemplos y recursos técnicos del proyecto utilizan principalmente:
@@ -209,33 +173,6 @@ Patrones relacionados con la comunicación y distribución de responsabilidades 
 - Iterator
 - Visitor
 - Interpreter
-
----
-
-# 📜 Licencia
-
-## Código y diagramas
-
-El **código fuente Java** y los **diagramas UML/PlantUML** incluidos en este repositorio se distribuyen bajo:
-
-**Apache License 2.0**
-
-Esto permite utilizar, modificar y redistribuir estos recursos respetando las condiciones establecidas por dicha licencia.
-
-Consulta el archivo [`LICENSE`](LICENSE) para conocer los términos completos.
-
-## Contenido editorial
-
-La licencia Apache 2.0 **no se aplica automáticamente** a:
-
-- 📝 Textos y explicaciones.
-- 🎨 Infografías.
-- 🖼️ Recursos gráficos.
-- 📚 Contenido editorial.
-
-Estos contenidos permanecen bajo los derechos de autor de su creador, salvo que se indique expresamente lo contrario.
-
-> **El código y los diagramas son libres de reutilizar bajo Apache 2.0. El contenido editorial y creativo permanece reservado.**
 
 ---
 
