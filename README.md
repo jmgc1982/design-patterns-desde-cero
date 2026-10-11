@@ -108,11 +108,11 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 
 Los ejemplos y recursos técnicos del proyecto utilizan principalmente:
 
-- **Java** — lenguaje utilizado para los ejemplos.
-- **UML** — representación visual de los diseños.
-- **PlantUML** — creación de los diagramas UML.
-- **Git** — control de versiones.
-- **GitHub** — alojamiento y evolución del proyecto.
+- **Java** - lenguaje utilizado para los ejemplos.
+- **UML** - representación visual de los diseños.
+- **PlantUML** - creación de los diagramas UML.
+- **Git** - control de versiones.
+- **GitHub** - alojamiento y evolución del proyecto.
 
 ---
 
