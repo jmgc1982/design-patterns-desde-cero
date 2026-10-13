@@ -1,0 +1,44 @@
+@startuml
+
+interface Notificacion {
+    + enviar(mensaje : String) : void
+}
+
+class NotificacionEmail {
+    + enviar(mensaje : String) : void
+}
+
+abstract class NotificacionDecorator {
+    # notificacion : Notificacion
+
+    + NotificacionDecorator(
+        notificacion : Notificacion
+    )
+
+    + enviar(mensaje : String) : void
+}
+
+class LogDecorator {
+    + enviar(mensaje : String) : void
+    - registrar(mensaje : String) : void
+}
+
+class CifradoDecorator {
+    + enviar(mensaje : String) : void
+    - cifrar(mensaje : String) : String
+}
+
+class PrioridadDecorator {
+    + enviar(mensaje : String) : void
+}
+
+Notificacion <|.. NotificacionEmail
+Notificacion <|.. NotificacionDecorator
+
+NotificacionDecorator <|-- LogDecorator
+NotificacionDecorator <|-- CifradoDecorator
+NotificacionDecorator <|-- PrioridadDecorator
+
+NotificacionDecorator --> Notificacion : envuelve
+
+@enduml
