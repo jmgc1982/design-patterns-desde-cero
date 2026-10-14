@@ -1373,44 +1373,6 @@ Decorator será precisamente el siguiente patrón que estudiaremos.
 
 ---
 
-# 🔄 Comparación dentro de la Parte III
-
-Hasta ahora:
-
-```text
-10. Adapter
-       ↓
-Compatibilidad
-
-11. Bridge
-       ↓
-Independencia
-
-12. Composite
-       ↓
-Jerarquías parte-todo
-```
-
-Podemos verlo así:
-
-```text
-PATRONES ESTRUCTURALES
-        │
-        ├── Adapter
-        │      ↓
-        │  Conectar
-        │
-        ├── Bridge
-        │      ↓
-        │  Separar
-        │
-        └── Composite
-               ↓
-           Agrupar
-```
-
----
-
 # 🧠 Principios relacionados
 
 Composite conecta con varios principios de diseño.

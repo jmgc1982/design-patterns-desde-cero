@@ -474,7 +474,7 @@ public interface Notificacion {
 
 ---
 
-## Concrete Product — Email
+## Concrete Product - Email
 
 ```java
 public class EmailNotificacion
@@ -492,7 +492,7 @@ public class EmailNotificacion
 
 ---
 
-## Concrete Product — SMS
+## Concrete Product - SMS
 
 ```java
 public class SMSNotificacion

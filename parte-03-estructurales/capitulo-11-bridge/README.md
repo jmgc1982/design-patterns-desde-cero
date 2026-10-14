@@ -1405,37 +1405,6 @@ Aunque ambos utilizan composición, resuelven problemas distintos.
 
 ---
 
-# 🔄 Comparación con la Parte III
-
-Hasta ahora:
-
-```text
-10. Adapter
-       ↓
-Hacer compatibles interfaces existentes
-
-11. Bridge
-       ↓
-Separar dimensiones que deben
-evolucionar independientemente
-```
-
-Podemos verlo así:
-
-```text
-PATRONES ESTRUCTURALES
-         │
-         ├── Adapter
-         │      ↓
-         │  Compatibilidad
-         │
-         └── Bridge
-                ↓
-           Independencia
-```
-
----
-
 # 🧠 Principios relacionados
 
 Bridge conecta especialmente con varios principios de diseño.
@@ -1484,34 +1453,6 @@ en lugar de acoplarnos a:
 
 ```java
 Televisor
-```
-
----
-
-# 📁 Estructura del capítulo
-
-```text
-capitulo-11-bridge/
-│
-├── README.md
-│
-├── java/
-│   ├── Dispositivo.java
-│   ├── Televisor.java
-│   ├── Radio.java
-│   ├── Mando.java
-│   ├── MandoAvanzado.java
-│   └── Main.java
-│
-├── uml/
-│   ├── bridge.puml
-│   └── bridge.png
-│
-├── infografia/
-│   └── bridge.png
-│
-└── ejercicios/
-    └── README.md
 ```
 
 ---

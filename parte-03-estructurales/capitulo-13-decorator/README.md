@@ -1410,52 +1410,6 @@ Proxy aparecerá más adelante en esta Parte III.
 
 ---
 
-# 🔄 Comparación dentro de la Parte III
-
-Hasta ahora:
-
-```text
-10. Adapter
-       ↓
-Compatibilidad
-
-11. Bridge
-       ↓
-Independencia
-
-12. Composite
-       ↓
-Jerarquías
-
-13. Decorator
-       ↓
-Extensión dinámica
-```
-
-Podemos visualizarlo:
-
-```text
-PATRONES ESTRUCTURALES
-        │
-        ├── Adapter
-        │      ↓
-        │   Conectar
-        │
-        ├── Bridge
-        │      ↓
-        │   Separar
-        │
-        ├── Composite
-        │      ↓
-        │   Agrupar
-        │
-        └── Decorator
-               ↓
-            Extender
-```
-
----
-
 # 🧠 Principios relacionados
 
 Decorator conecta especialmente con varios principios de diseño.

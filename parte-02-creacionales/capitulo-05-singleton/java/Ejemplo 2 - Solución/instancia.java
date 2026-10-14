@@ -1,0 +1,1 @@
+private static Configuracion instancia;

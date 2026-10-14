@@ -1,4 +1,5 @@
-public class Documento implements Prototype<Documento> {
+public class Documento
+        implements Prototype<Documento> {
 
     @Override
     public Documento clonar() {
