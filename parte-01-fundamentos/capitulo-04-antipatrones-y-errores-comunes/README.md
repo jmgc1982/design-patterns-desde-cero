@@ -188,10 +188,10 @@ Podemos imaginar:
    Persistencia       Notificaciones     Inventario
          │                 │                 │
          ▼                 ▼                 ▼
-      MySQL              Email             Stock
+       MySQL             Email             Stock
                            │
                            ▼
-                         PDF
+                          PDF
                            │
                            ▼
                        Auditoría
@@ -407,22 +407,22 @@ Solución sencilla
                 "Por si acaso..."
                        │
                        ▼
-              Más abstracciones
+               Más abstracciones
                        │
                        ▼
-                   Factory
+                    Factory
                        │
                        ▼
-                  Builder
+                    Builder
                        │
                        ▼
-                   Adapter
+                    Adapter
                        │
                        ▼
-                  Observer
+                    Observer
                        │
                        ▼
-                 15 clases
+                   15 clases
 ```
 
 El sistema puede terminar siendo técnicamente sofisticado, pero innecesariamente complicado.

@@ -393,7 +393,7 @@ public interface Notificacion {
 
 ---
 
-# 📧 Concrete Component - NotificacionEmail.java
+## 📧 Concrete Component - NotificacionEmail.java
 
 ```java
 public class NotificacionEmail
@@ -413,7 +413,7 @@ public class NotificacionEmail
 
 ---
 
-# 🎁 Decorator base - NotificacionDecorator.java
+## 🎁 Decorator base - NotificacionDecorator.java
 
 ```java
 public abstract class NotificacionDecorator
@@ -445,7 +445,7 @@ Su función es servir como base para decoradores concretos.
 
 ---
 
-# 📝 Concrete Decorator - LogDecorator.java
+## 📝 Concrete Decorator - LogDecorator.java
 
 ```java
 public class LogDecorator
@@ -481,7 +481,7 @@ public class LogDecorator
 
 ---
 
-# 🔐 Concrete Decorator - CifradoDecorator.java
+## 🔐 Concrete Decorator - CifradoDecorator.java
 
 ```java
 public class CifradoDecorator
@@ -516,7 +516,7 @@ public class CifradoDecorator
 
 ---
 
-# 🚨 Concrete Decorator - PrioridadDecorator.java
+## 🚨 Concrete Decorator - PrioridadDecorator.java
 
 ```java
 public class PrioridadDecorator
@@ -542,7 +542,7 @@ public class PrioridadDecorator
 
 ---
 
-# ▶️ Cliente - Main.java
+## ▶️ Cliente - Main.java
 
 Podemos utilizar únicamente el componente básico:
 

@@ -538,7 +538,7 @@ public class NotificacionService {
 
 ---
 
-# 🏛️ Facade - TiendaFacade.java
+## 🏛️ Facade - TiendaFacade.java
 
 ```java
 public class TiendaFacade {
@@ -622,7 +622,7 @@ public class TiendaFacade {
 
 ---
 
-# ▶️ Cliente - Main.java
+## ▶️ Cliente - Main.java
 
 Ahora el cliente solamente necesita conocer la fachada:
 
@@ -1522,19 +1522,19 @@ Una buena Facade:
 
 ```text
 SIMPLIFICA
-+
-COORDINA
-+
-DELEGA
+    +
+ COORDINA
+    +
+  DELEGA
 ```
 
 Una mala Facade:
 
 ```text
 SABE TODO
-+
+    +
 HACE TODO
-+
+    +
 CONTROLA TODO
 ```
 

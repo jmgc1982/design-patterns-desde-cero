@@ -389,7 +389,7 @@ public interface ElementoSistema {
 
 ---
 
-# 📄 Leaf - Archivo.java
+## 📄 Leaf - Archivo.java
 
 ```java
 public class Archivo
@@ -436,7 +436,7 @@ public class Archivo
 
 ---
 
-# 📁 Composite - Carpeta.java
+## 📁 Composite - Carpeta.java
 
 ```java
 import java.util.ArrayList;
@@ -517,7 +517,7 @@ public class Carpeta
 
 ---
 
-# ▶️ Cliente - Main.java
+## ▶️ Cliente - Main.java
 
 ```java
 public class Main {

@@ -426,7 +426,7 @@ public interface Dispositivo {
 
 ---
 
-# 📺 Concrete Implementor - Televisor.java
+## 📺 Concrete Implementor - Televisor.java
 
 ```java
 public class Televisor
@@ -489,7 +489,7 @@ public class Televisor
 
 ---
 
-# 📻 Concrete Implementor - Radio.java
+## 📻 Concrete Implementor - Radio.java
 
 ```java
 public class Radio
@@ -552,7 +552,7 @@ public class Radio
 
 ---
 
-# 🎛️ Abstraction - Mando.java
+## 🎛️ Abstraction - Mando.java
 
 ```java
 public class Mando {
@@ -601,7 +601,7 @@ public class Mando {
 
 ---
 
-# 🚀 Refined Abstraction - MandoAvanzado.java
+## 🚀 Refined Abstraction - MandoAvanzado.java
 
 ```java
 public class MandoAvanzado
@@ -626,7 +626,7 @@ public class MandoAvanzado
 
 ---
 
-# ▶️ Cliente - Main.java
+## ▶️ Cliente - Main.java
 
 ```java
 public class Main {
@@ -786,19 +786,17 @@ Conceptualmente:
 ABSTRACCIÓN
 ────────────────────
 
-Mando
-  ▲
-  │
+  Mando
+    ▲
+    │
 MandoAvanzado
-
-  │
-  │ Bridge
-  ▼
-
+    │
+    │ Bridge
+    ▼
 IMPLEMENTACIÓN
 ────────────────────
 
-Dispositivo
+ Dispositivo
   ▲       ▲
   │       │
  TV     Radio

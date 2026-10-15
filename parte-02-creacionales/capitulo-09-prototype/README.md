@@ -228,7 +228,7 @@ La idea conceptual es muy sencilla:
             │
             │ clonar()
             ▼
-         COPIA
+          COPIA
 ```
 
 El objeto conoce cómo generar una copia de sí mismo.
@@ -281,7 +281,7 @@ public interface Prototype<T> {
 
 ---
 
-# 📄 ConfiguracionPagina.java
+## 📄 ConfiguracionPagina.java
 
 ```java
 public class ConfiguracionPagina
@@ -327,7 +327,7 @@ public class ConfiguracionPagina
 
 ---
 
-# 📄 Documento.java
+## 📄 Documento.java
 
 ```java
 public class Documento
@@ -536,11 +536,11 @@ Conceptualmente:
 Hasta ahora parece muy fácil:
 
 ```text
-Objeto
+ Objeto
    ↓
-clonar()
+ clonar()
    ↓
-Copia
+ Copia
 ```
 
 Pero aparece una cuestión fundamental.
@@ -1341,11 +1341,11 @@ CREACIÓN DE OBJETOS
         │
         ├── Tipo concreto
         │      ↓
-        │ Factory Method
+        │   Factory Method
         │
         ├── Familia
         │      ↓
-        │ Abstract Factory
+        │   Abstract Factory
         │
         ├── Construcción
         │      ↓
@@ -1353,7 +1353,7 @@ CREACIÓN DE OBJETOS
         │
         └── Copia
                ↓
-           Prototype
+            Prototype
 ```
 
 ---

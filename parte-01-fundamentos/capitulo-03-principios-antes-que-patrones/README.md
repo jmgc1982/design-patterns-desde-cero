@@ -155,9 +155,9 @@ Podemos pensar en el diseño de esta manera:
              │          │
              ▼          ▼
        Cambio local   Más impacto
-                         │
-                         ▼
-                    Más riesgo
+                        │
+                        ▼
+                      Más riesgo
 ```
 
 La calidad del diseño se pone especialmente a prueba cuando necesitamos modificarlo.

@@ -788,13 +788,13 @@ Documento
 Y diferentes creadores:
 
 ```text
-DocumentoCreator
-        ▲
-        │
- ┌──────┼────────┐
- │      │        │
-PDF    CSV     Excel
-Creator Creator Creator
+    DocumentoCreator
+           ▲
+           │
+    ┌──────┼────────┐
+    │      │        │
+    PDF    CSV     Excel
+  Creator Creator Creator
 ```
 
 La lógica que trabaja con `Documento` puede permanecer desacoplada de determinadas clases concretas.

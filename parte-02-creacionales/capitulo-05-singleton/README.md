@@ -357,7 +357,7 @@ getInstance()
        ▼
 ¿Existe instancia?
        │
-      NO
+       NO
        │
        ▼
 Crear instancia
@@ -374,7 +374,7 @@ getInstance()
        ▼
 ¿Existe instancia?
        │
-      SÍ
+       SÍ
        │
        ▼
 Devolver instancia existente
@@ -416,7 +416,7 @@ La implementación perezosa anterior tiene un problema potencial.
 Imaginemos dos hilos:
 
 ```text
-Thread 1                 Thread 2
+Thread 1                  Thread 2
    │                         │
    ▼                         ▼
 getInstance()            getInstance()

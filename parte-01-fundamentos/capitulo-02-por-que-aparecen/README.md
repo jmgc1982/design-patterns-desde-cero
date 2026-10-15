@@ -584,8 +584,8 @@ Por tanto:
 ```text
 Capítulo 1
 ¿Qué es?
-      │
-      ▼
+    │
+    ▼
 Capítulo 2
 ¿Por qué aparece?
 ```

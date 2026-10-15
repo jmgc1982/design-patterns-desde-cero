@@ -660,7 +660,7 @@ Conceptualmente:
 ```text
 Adapter
    │
-   HAS-A
+ HAS-A
    ▼
 Adaptee
 ```
@@ -1335,7 +1335,7 @@ Componente A
     │
     │ espera una interfaz
     │
-    X  incompatibilidad
+    X incompatibilidad
     │
     │ ofrece otra interfaz
     ▼

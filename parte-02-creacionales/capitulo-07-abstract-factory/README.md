@@ -275,7 +275,7 @@ Ahora implementamos las diferentes familias.
 
 ---
 
-# 🪟 Familia Windows
+## 🪟 Familia Windows
 
 ```java
 public class BotonWindows
@@ -307,7 +307,7 @@ public class CheckboxWindows
 
 ---
 
-# 🍎 Familia macOS
+## 🍎 Familia macOS
 
 ```java
 public class BotonMac
@@ -341,7 +341,7 @@ Ahora necesitamos crear las familias sin que el cliente conozca sus clases concr
 
 ---
 
-# 🏭 Abstract Factory
+## 🏭 Abstract Factory
 
 Definimos una interfaz que declara cómo crear cada tipo de producto:
 
@@ -366,7 +366,7 @@ Solamente define:
 
 ---
 
-# 🪟 Fábrica concreta - Windows
+## 🪟 Fábrica concreta - Windows
 
 ```java
 public class WindowsFactory
@@ -397,7 +397,7 @@ WindowsFactory
 
 ---
 
-# 🍎 Fábrica concreta - macOS
+## 🍎 Fábrica concreta - macOS
 
 ```java
 public class MacFactory
@@ -449,9 +449,9 @@ Podemos simplificarlo conceptualmente:
               │           │ │           │
               ▼           ▼ ▼           ▼
            Botón       Checkbox       Botón
-          Windows      Windows        macOS
-                                   Checkbox
-                                     macOS
+          Windows       Windows       macOS
+                                     Checkbox
+                                      macOS
 ```
 
 Cada fábrica concreta crea una **familia completa de productos compatibles**.
@@ -1241,7 +1241,7 @@ ABSTRACT FACTORY
         │                 │
    ┌────┴────┐       ┌────┴────┐
    │         │       │         │
- Botón    Checkbox  Botón    Checkbox
+ Botón    Checkbox  Botón   Checkbox
 
 Pregunta:
 
