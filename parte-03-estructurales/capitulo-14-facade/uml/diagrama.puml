@@ -1,0 +1,60 @@
+@startuml
+
+class Main
+
+class TiendaFacade {
+    - inventario : InventarioService
+    - pagos : PagoService
+    - envios : EnvioService
+    - notificaciones : NotificacionService
+
+    + realizarPedido(
+        producto : String,
+        cantidad : int,
+        cliente : String,
+        direccion : String,
+        importe : double
+      ) : boolean
+}
+
+class InventarioService {
+    + hayStock(
+        producto : String,
+        cantidad : int
+      ) : boolean
+
+    + reservar(
+        producto : String,
+        cantidad : int
+      ) : void
+}
+
+class PagoService {
+    + procesar(
+        cliente : String,
+        importe : double
+      ) : boolean
+}
+
+class EnvioService {
+    + crearEnvio(
+        producto : String,
+        direccion : String
+      ) : String
+}
+
+class NotificacionService {
+    + enviarConfirmacion(
+        cliente : String,
+        numeroEnvio : String
+      ) : void
+}
+
+Main --> TiendaFacade
+
+TiendaFacade --> InventarioService
+TiendaFacade --> PagoService
+TiendaFacade --> EnvioService
+TiendaFacade --> NotificacionService
+
+@enduml

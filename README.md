@@ -69,7 +69,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 | 11 | [Bridge](parte-03-estructurales/capitulo-11-bridge/README.md#-capítulo-11---bridge) |
 | 12 | [Composite](parte-03-estructurales/capitulo-12-composite/README.md#-capítulo-12---composite) |
 | 13 | [Decorator](parte-03-estructurales/capitulo-13-decorator/README.md#-capítulo-13---decorator) |
-| 14 | Facade |
+| 14 | [Facade](parte-03-estructurales/capitulo-14-facade/README.md#-capítulo-14---facade) |
 | 15 | Flyweight |
 | 16 | Proxy |
 
