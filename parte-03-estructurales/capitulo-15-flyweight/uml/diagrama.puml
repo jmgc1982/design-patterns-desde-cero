@@ -1,0 +1,44 @@
+@startuml
+
+class TipoArbol {
+    - especie : String
+    - color : String
+    - textura : String
+
+    + dibujar(
+        x : int,
+        y : int
+      ) : void
+}
+
+class Arbol {
+    - x : int
+    - y : int
+    - tipo : TipoArbol
+
+    + dibujar() : void
+}
+
+class TipoArbolFactory {
+    - tipos : Map<String, TipoArbol>
+
+    + obtenerTipo(
+        especie : String,
+        color : String,
+        textura : String
+      ) : TipoArbol
+}
+
+class Bosque {
+    - arboles : List<Arbol>
+
+    + plantar(...) : void
+    + dibujar() : void
+}
+
+Arbol --> TipoArbol : comparte
+TipoArbolFactory --> TipoArbol : crea/reutiliza
+Bosque --> Arbol : contiene
+Bosque --> TipoArbolFactory : solicita
+
+@enduml
