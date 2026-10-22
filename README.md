@@ -2,6 +2,8 @@
 
 > **Aprende a diseñar software mantenible con ejemplos reales.**
 
+![Portada](./imagenes/portada.png)
+
 Serie de Ingeniería de Software dedicada a comprender los **patrones de diseño**, los problemas que intentan resolver y cuándo tiene sentido utilizarlos.
 
 El objetivo de esta serie no es memorizar una lista de patrones, sino aprender a **reconocer problemas de diseño, analizar el contexto y tomar mejores decisiones al diseñar software**.
