@@ -1,0 +1,26 @@
+@startuml
+
+interface Imagen {
+    + mostrar() : void
+}
+
+class ImagenReal {
+    - archivo : String
+    + ImagenReal(archivo : String)
+    - cargarDesdeDisco() : void
+    + mostrar() : void
+}
+
+class ProxyImagen {
+    - archivo : String
+    - imagenReal : ImagenReal
+    + ProxyImagen(archivo : String)
+    + mostrar() : void
+}
+
+Imagen <|.. ImagenReal
+Imagen <|.. ProxyImagen
+
+ProxyImagen --> ImagenReal : controla acceso
+
+@enduml

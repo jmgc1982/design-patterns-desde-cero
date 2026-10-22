@@ -71,7 +71,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 | 13 | [Decorator](parte-03-estructurales/capitulo-13-decorator/README.md#-capítulo-13---decorator) |
 | 14 | [Facade](parte-03-estructurales/capitulo-14-facade/README.md#-capítulo-14---facade) |
 | 15 | [Flyweight](parte-03-estructurales/capitulo-15-flyweight/README.md#-capítulo-15---flyweight) |
-| 16 | Proxy |
+| 16 | [Proxy](parte-03-estructurales/capitulo-16-proxy/README.md#-capítulo-16---proxy) |
 
 ---
 
