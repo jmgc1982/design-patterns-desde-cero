@@ -1,0 +1,41 @@
+@startuml
+
+interface EstrategiaPago {
+    + pagar(cantidad : double) : void
+}
+
+class PagoTarjeta {
+    + pagar(cantidad : double) : void
+}
+
+class PagoPayPal {
+    + pagar(cantidad : double) : void
+}
+
+class PagoTransferencia {
+    + pagar(cantidad : double) : void
+}
+
+class ProcesadorPago {
+    - estrategia : EstrategiaPago
+
+    + ProcesadorPago(
+        estrategia : EstrategiaPago
+      )
+
+    + setEstrategia(
+        estrategia : EstrategiaPago
+      ) : void
+
+    + procesar(
+        cantidad : double
+      ) : void
+}
+
+EstrategiaPago <|.. PagoTarjeta
+EstrategiaPago <|.. PagoPayPal
+EstrategiaPago <|.. PagoTransferencia
+
+ProcesadorPago --> EstrategiaPago : utiliza
+
+@enduml
