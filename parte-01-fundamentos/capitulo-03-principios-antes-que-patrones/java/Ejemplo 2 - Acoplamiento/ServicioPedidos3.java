@@ -2,9 +2,7 @@ public class ServicioPedidos {
 
     private final PedidoRepository repository;
 
-    public ServicioPedidos(
-            PedidoRepository repository) {
-
+    public ServicioPedidos(PedidoRepository repository) {
         this.repository = repository;
     }
 

@@ -82,7 +82,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 | # | Capítulo/Patrón |
 |---:|---|
 | 17 | [Strategy](parte-04-comportamiento/capitulo-17-strategy/README.md#-capítulo-17---strategy) |
-| 18 | Observer |
+| 18 | [Observer](parte-04-comportamiento/capitulo-18-observer/README.md#-capítulo-18---observer) |
 | 19 | Command |
 | 20 | State |
 | 21 | Template Method |

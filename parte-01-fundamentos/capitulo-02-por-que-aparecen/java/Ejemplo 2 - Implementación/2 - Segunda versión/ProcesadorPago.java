@@ -1,8 +1,6 @@
 public class ProcesadorPago {
 
-    public void pagar(
-            String metodo,
-            double cantidad) {
+    public void pagar(String metodo, double cantidad) {
 
         if (metodo.equals("TARJETA")) {
             // Pago con tarjeta

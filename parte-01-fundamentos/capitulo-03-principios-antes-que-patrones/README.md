@@ -221,7 +221,6 @@ Una alternativa consiste en depender de una abstracción:
 
 ```java
 public interface PedidoRepository {
-
     void guardar(Pedido pedido);
 }
 ```
@@ -229,8 +228,7 @@ public interface PedidoRepository {
 Y crear una implementación:
 
 ```java
-public class MySQLPedidoRepository
-        implements PedidoRepository {
+public class MySQLPedidoRepository implements PedidoRepository {
 
     @Override
     public void guardar(Pedido pedido) {
@@ -246,9 +244,7 @@ public class ServicioPedidos {
 
     private final PedidoRepository repository;
 
-    public ServicioPedidos(
-            PedidoRepository repository) {
-
+    public ServicioPedidos(PedidoRepository repository) {
         this.repository = repository;
     }
 
@@ -405,15 +401,11 @@ public class Pedido {
     }
 
     public void guardar() {
-        System.out.println(
-            "Guardando pedido en MySQL..."
-        );
+        System.out.println("Guardando pedido en MySQL...");
     }
 
     public void enviarEmail() {
-        System.out.println(
-            "Enviando email..."
-        );
+        System.out.println("Enviando email...");
     }
 }
 ```
@@ -453,14 +445,11 @@ public interface PedidoRepository {
 Implementación:
 
 ```java
-public class MySQLPedidoRepository
-        implements PedidoRepository {
+public class MySQLPedidoRepository implements PedidoRepository {
 
     @Override
     public void guardar(Pedido pedido) {
-        System.out.println(
-            "Guardando pedido en MySQL..."
-        );
+        System.out.println("Guardando pedido en MySQL...");
     }
 }
 ```
@@ -469,7 +458,6 @@ Notificaciones:
 
 ```java
 public interface Notificador {
-
     void enviar(String mensaje);
 }
 ```
@@ -477,14 +465,11 @@ public interface Notificador {
 Implementación:
 
 ```java
-public class EmailNotificador
-        implements Notificador {
+public class EmailNotificador implements Notificador {
 
     @Override
     public void enviar(String mensaje) {
-        System.out.println(
-            "Enviando email: " + mensaje
-        );
+        System.out.println("Enviando email: " + mensaje);
     }
 }
 ```

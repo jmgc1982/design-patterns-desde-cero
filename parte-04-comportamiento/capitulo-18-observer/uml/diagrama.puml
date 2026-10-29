@@ -1,0 +1,58 @@
+@startuml
+
+interface ObservadorStock {
+    + actualizar(
+        producto : Producto
+      ) : void
+}
+
+class Producto {
+    - nombre : String
+    - stock : int
+    - observadores : List<ObservadorStock>
+
+    + suscribir(
+        observador : ObservadorStock
+      ) : void
+
+    + desuscribir(
+        observador : ObservadorStock
+      ) : void
+
+    - notificar() : void
+
+    + setStock(
+        stock : int
+      ) : void
+
+    + getNombre() : String
+    + getStock() : int
+}
+
+class NotificadorEmail {
+    - email : String
+    + actualizar(
+        producto : Producto
+      ) : void
+}
+
+class NotificadorPush {
+    - dispositivo : String
+    + actualizar(
+        producto : Producto
+      ) : void
+}
+
+class EstadisticasStock {
+    + actualizar(
+        producto : Producto
+      ) : void
+}
+
+ObservadorStock <|.. NotificadorEmail
+ObservadorStock <|.. NotificadorPush
+ObservadorStock <|.. EstadisticasStock
+
+Producto o--> "0..*" ObservadorStock : notifica
+
+@enduml

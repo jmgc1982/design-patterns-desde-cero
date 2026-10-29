@@ -57,9 +57,7 @@ Una primera implementación podría ser:
 public class ProcesadorPago {
 
     public void pagar(double cantidad) {
-        System.out.println(
-            "Procesando pago con tarjeta: " + cantidad
-        );
+        System.out.println("Procesando pago con tarjeta: " + cantidad);
     }
 }
 ```
@@ -84,13 +82,11 @@ Podríamos modificar nuestra clase:
 ```java
 public class ProcesadorPago {
 
-    public void pagar(
-            String metodo,
-            double cantidad) {
-
+    public void pagar(String metodo, double cantidad) {
+        
         if (metodo.equals("TARJETA")) {
             pagarConTarjeta(cantidad);
-
+        
         } else if (metodo.equals("PAYPAL")) {
             pagarConPayPal(cantidad);
 
@@ -269,9 +265,7 @@ Podemos representar la evolución del ejemplo de pagos.
 public class ProcesadorPago {
 
     public void pagar(double cantidad) {
-        System.out.println(
-            "Procesando pago con tarjeta: " + cantidad
-        );
+        System.out.println("Procesando pago con tarjeta: " + cantidad);
     }
 }
 ```
@@ -287,9 +281,7 @@ Cuando aparecen diferentes métodos:
 ```java
 public class ProcesadorPago {
 
-    public void pagar(
-            String metodo,
-            double cantidad) {
+    public void pagar(String metodo, double cantidad) {
 
         if (metodo.equals("TARJETA")) {
             // Pago con tarjeta
@@ -319,9 +311,7 @@ Imaginemos que seguimos añadiendo métodos:
 ```java
 public class ProcesadorPago {
 
-    public void pagar(
-            String metodo,
-            double cantidad) {
+    public void pagar(String metodo, double cantidad) {
 
         if (metodo.equals("TARJETA")) {
             // ...

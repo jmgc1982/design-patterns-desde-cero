@@ -9,14 +9,10 @@ public class Pedido {
     }
 
     public void guardar() {
-        System.out.println(
-            "Guardando pedido en MySQL..."
-        );
+        System.out.println("Guardando pedido en MySQL...");
     }
 
     public void enviarEmail() {
-        System.out.println(
-            "Enviando email..."
-        );
+        System.out.println("Enviando email...");
     }
 }

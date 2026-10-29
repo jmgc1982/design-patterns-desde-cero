@@ -242,9 +242,7 @@ public class EmailNotificador implements Notificador {
 
     @Override
     public void enviar(String mensaje) {
-        System.out.println(
-            "Enviando email: " + mensaje
-        );
+        System.out.println("Enviando email: " + mensaje);
     }
 }
 ```
@@ -254,9 +252,7 @@ public class SMSNotificador implements Notificador {
 
     @Override
     public void enviar(String mensaje) {
-        System.out.println(
-            "Enviando SMS: " + mensaje
-        );
+        System.out.println("Enviando SMS: " + mensaje);
     }
 }
 ```
@@ -268,8 +264,7 @@ public class ServicioNotificaciones {
 
     private final Notificador notificador;
 
-    public ServicioNotificaciones(
-            Notificador notificador) {
+    public ServicioNotificaciones(Notificador notificador) {
 
         this.notificador = notificador;
     }
@@ -287,15 +282,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Notificador notificador =
-                new EmailNotificador();
+        Notificador notificador = new EmailNotificador();
 
-        ServicioNotificaciones servicio =
-                new ServicioNotificaciones(notificador);
+        ServicioNotificaciones servicio = new ServicioNotificaciones(notificador);
 
-        servicio.enviar(
-                "Hola desde Patrones de Diseño"
-        );
+        servicio.enviar("Hola desde Patrones de Diseño");
     }
 }
 ```
@@ -317,9 +308,7 @@ public class PushNotificador implements Notificador {
 
     @Override
     public void enviar(String mensaje) {
-        System.out.println(
-            "Enviando push: " + mensaje
-        );
+        System.out.println("Enviando push: " + mensaje);
     }
 }
 ```
