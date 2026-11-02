@@ -1,0 +1,43 @@
+@startuml
+
+interface Command {
+    + execute() : void
+}
+
+class EncenderLuzCommand {
+    - luz : Luz
+    + execute() : void
+}
+
+class ApagarLuzCommand {
+    - luz : Luz
+    + execute() : void
+}
+
+class Luz {
+    + encender() : void
+    + apagar() : void
+}
+
+class ControlRemoto {
+    - comando : Command
+    + setCommand(comando : Command) : void
+    + pulsarBoton() : void
+}
+
+class Main
+
+Command <|.. EncenderLuzCommand
+Command <|.. ApagarLuzCommand
+
+EncenderLuzCommand --> Luz : utiliza
+ApagarLuzCommand --> Luz : utiliza
+
+ControlRemoto --> Command : ejecuta
+
+Main --> Luz
+Main --> EncenderLuzCommand
+Main --> ApagarLuzCommand
+Main --> ControlRemoto
+
+@enduml
