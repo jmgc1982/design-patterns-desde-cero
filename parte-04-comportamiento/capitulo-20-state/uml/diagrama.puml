@@ -1,0 +1,45 @@
+@startuml
+
+interface EstadoPedido {
+    + pagar(pedido : Pedido) : void
+    + enviar(pedido : Pedido) : void
+    + entregar(pedido : Pedido) : void
+    + cancelar(pedido : Pedido) : void
+    + nombre() : String
+}
+
+class Pedido {
+    - estado : EstadoPedido
+    + cambiarEstado(
+        estado : EstadoPedido
+      ) : void
+    + pagar() : void
+    + enviar() : void
+    + entregar() : void
+    + cancelar() : void
+    + getEstado() : String
+}
+
+class PedidoCreado
+class PedidoPagado
+class PedidoEnviado
+class PedidoEntregado
+class PedidoCancelado
+
+EstadoPedido <|.. PedidoCreado
+EstadoPedido <|.. PedidoPagado
+EstadoPedido <|.. PedidoEnviado
+EstadoPedido <|.. PedidoEntregado
+EstadoPedido <|.. PedidoCancelado
+
+Pedido --> EstadoPedido : estado actual
+
+PedidoCreado ..> PedidoPagado : pagar()
+PedidoCreado ..> PedidoCancelado : cancelar()
+
+PedidoPagado ..> PedidoEnviado : enviar()
+PedidoPagado ..> PedidoCancelado : cancelar()
+
+PedidoEnviado ..> PedidoEntregado : entregar()
+
+@enduml
