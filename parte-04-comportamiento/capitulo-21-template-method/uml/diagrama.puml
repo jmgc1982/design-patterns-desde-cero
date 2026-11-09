@@ -1,0 +1,42 @@
+@startuml
+
+abstract class ProcesadorDocumento {
+
+    + procesar() : void
+
+    - cargarDatos() : void
+    - validarDatos() : void
+
+    # generarContenido() : void
+    # aplicarFormato() : void
+
+    - guardar() : void
+
+    # debeGuardar() : boolean
+    # finalizar() : void
+}
+
+class ProcesadorPDF {
+
+    # generarContenido() : void
+    # aplicarFormato() : void
+}
+
+class ProcesadorHTML {
+
+    # generarContenido() : void
+    # aplicarFormato() : void
+}
+
+class ProcesadorTXT {
+
+    # generarContenido() : void
+    # aplicarFormato() : void
+    # debeGuardar() : boolean
+}
+
+ProcesadorDocumento <|-- ProcesadorPDF
+ProcesadorDocumento <|-- ProcesadorHTML
+ProcesadorDocumento <|-- ProcesadorTXT
+
+@enduml
