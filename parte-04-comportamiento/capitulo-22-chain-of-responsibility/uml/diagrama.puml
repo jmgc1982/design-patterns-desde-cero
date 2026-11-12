@@ -1,0 +1,48 @@
+@startuml
+
+interface Handler {
+    + setNext(handler : Handler) : Handler
+    + handle(peticion : Peticion) : boolean
+}
+
+abstract class AbstractHandler {
+    - siguiente : Handler
+
+    + setNext(handler : Handler) : Handler
+    # next(peticion : Peticion) : boolean
+}
+
+class AutenticacionHandler {
+    + handle(peticion : Peticion) : boolean
+}
+
+class AutorizacionHandler {
+    + handle(peticion : Peticion) : boolean
+}
+
+class ValidacionHandler {
+    + handle(peticion : Peticion) : boolean
+}
+
+class LoggingHandler {
+    + handle(peticion : Peticion) : boolean
+}
+
+class Peticion {
+    - autenticada : boolean
+    - autorizada : boolean
+    - valida : boolean
+}
+
+Handler <|.. AbstractHandler
+
+AbstractHandler <|-- AutenticacionHandler
+AbstractHandler <|-- AutorizacionHandler
+AbstractHandler <|-- ValidacionHandler
+AbstractHandler <|-- LoggingHandler
+
+AbstractHandler --> Handler : siguiente
+
+Handler --> Peticion : procesa
+
+@enduml
