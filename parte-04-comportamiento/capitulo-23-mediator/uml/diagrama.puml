@@ -1,0 +1,45 @@
+@startuml
+
+interface ChatMediator {
+    + registrar(usuario : Usuario) : void
+    + enviar(
+        mensaje : String,
+        emisor : Usuario
+      ) : void
+}
+
+class Chat {
+    - usuarios : List<Usuario>
+
+    + registrar(
+        usuario : Usuario
+      ) : void
+
+    + enviar(
+        mensaje : String,
+        emisor : Usuario
+      ) : void
+}
+
+class Usuario {
+    - nombre : String
+    - mediator : ChatMediator
+
+    + enviar(
+        mensaje : String
+      ) : void
+
+    + recibir(
+        emisor : String,
+        mensaje : String
+      ) : void
+
+    + getNombre() : String
+}
+
+ChatMediator <|.. Chat
+
+Usuario --> ChatMediator : comunica mediante
+Chat o--> "0..*" Usuario : coordina
+
+@enduml

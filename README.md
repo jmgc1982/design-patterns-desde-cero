@@ -87,7 +87,7 @@ La serie está organizada en **5 Partes y 31 Capítulos**.
 | 20 | [State](parte-04-comportamiento/capitulo-20-state/README.md#-capítulo-20---state) |
 | 21 | [Template Method](parte-04-comportamiento/capitulo-21-template-method/README.md#-capítulo-21---template-method) |
 | 22 | [Chain of Responsibility](parte-04-comportamiento/capitulo-22-chain-of-responsibility/README.md#-capítulo-22---chain-of-responsibility) |
-| 23 | Mediator |
+| 23 | [Mediator](parte-04-comportamiento/capitulo-23-mediator/README.md#-capítulo-23---mediator) |
 | 24 | Memento |
 | 25 | Iterator |
 | 26 | Visitor |
