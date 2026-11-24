@@ -1,0 +1,49 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+interface "Iterable<Libro>" as IterableLibro {
+    + iterator() : Iterator<Libro>
+}
+
+interface "Iterator<Libro>" as IteratorLibro {
+    + hasNext() : boolean
+    + next() : Libro
+}
+
+class Biblioteca {
+    - libros : List<Libro>
+    + agregar(libro : Libro) : void
+    + cantidad() : int
+    + iterator() : Iterator<Libro>
+}
+
+class "Biblioteca.IteradorBiblioteca" as IteradorBiblioteca {
+    - posicion : int
+    + hasNext() : boolean
+    + next() : Libro
+}
+
+class Libro {
+    - titulo : String
+    - autor : String
+    + getTitulo() : String
+    + getAutor() : String
+    + toString() : String
+}
+
+class Main
+
+IterableLibro <|.. Biblioteca
+IteratorLibro <|.. IteradorBiblioteca
+
+Biblioteca *-- "0..*" Libro : contiene
+Biblioteca +-- IteradorBiblioteca : clase interna
+
+Biblioteca ..> IteratorLibro : proporciona
+IteradorBiblioteca ..> Libro : recorre
+
+Main ..> IterableLibro : utiliza
+Main ..> IteratorLibro : recorre
+
+@enduml
