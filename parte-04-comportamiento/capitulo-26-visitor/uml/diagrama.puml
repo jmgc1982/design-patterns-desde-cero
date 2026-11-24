@@ -1,0 +1,72 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+interface ElementoDocumento {
+    + aceptar(visitante : VisitanteDocumento) : void
+}
+
+interface VisitanteDocumento {
+    + visitar(parrafo : Parrafo) : void
+    + visitar(imagen : Imagen) : void
+    + visitar(tabla : Tabla) : void
+}
+
+class Parrafo {
+    - texto : String
+    + getTexto() : String
+    + aceptar(visitante : VisitanteDocumento) : void
+}
+
+class Imagen {
+    - ruta : String
+    - descripcion : String
+    + getRuta() : String
+    + getDescripcion() : String
+    + aceptar(visitante : VisitanteDocumento) : void
+}
+
+class Tabla {
+    - filas : int
+    - columnas : int
+    + getFilas() : int
+    + getColumnas() : int
+    + aceptar(visitante : VisitanteDocumento) : void
+}
+
+class VisitanteHTML {
+    - html : StringBuilder
+    + visitar(parrafo : Parrafo) : void
+    + visitar(imagen : Imagen) : void
+    + visitar(tabla : Tabla) : void
+    + getResultado() : String
+}
+
+class VisitanteEstadisticas {
+    - parrafos : int
+    - imagenes : int
+    - tablas : int
+    + visitar(parrafo : Parrafo) : void
+    + visitar(imagen : Imagen) : void
+    + visitar(tabla : Tabla) : void
+    + mostrarEstadisticas() : void
+}
+
+class Documento {
+    - elementos : List<ElementoDocumento>
+    + agregar(elemento : ElementoDocumento) : void
+    + aceptar(visitante : VisitanteDocumento) : void
+}
+
+ElementoDocumento <|.. Parrafo
+ElementoDocumento <|.. Imagen
+ElementoDocumento <|.. Tabla
+
+VisitanteDocumento <|.. VisitanteHTML
+VisitanteDocumento <|.. VisitanteEstadisticas
+
+ElementoDocumento ..> VisitanteDocumento : acepta
+
+Documento o--> "0..*" ElementoDocumento : contiene
+
+@enduml
